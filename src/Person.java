@@ -1,28 +1,42 @@
 public class Person {
-        private String firstName;
-        private String lastName;
+    String nume;
+    String prenume;
+    int varsta;
 
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public void setPrenume(String prenume) {
+        this.prenume = prenume;
     }
-    public String getFirstName() {
-        return firstName;
-    }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    public String getLastName()
-    {
-        return lastName;
 
+    public void setNume(String nume) {
+        this.nume = nume;
     }
-    public void setLastName(String lastName)
-    {
-        this.lastName=lastName;
+
+    public void setVarsta(int varsta) {
+        this.varsta = varsta;
     }
-    public String getFullName() {
-        return firstName + " " + lastName;
+
+    @Override
+    public String toString() {
+        return  nume + ' ' + prenume + ' ' +
+                ", varsta:" + varsta;
+    }
+
+    public Person(String nume, String prenume, int varsta) {
+        this.nume = nume;
+        this.prenume = prenume;
+        this.varsta = varsta;
+    }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public int getVarsta() {
+        return varsta;
     }
 
 }

@@ -4,8 +4,8 @@ import java.util.*;
 
 public class nrPers {
     public static void main(String[] args) {
-        String filePath = "persoane.txt";
-        Map<Person, Integer> persoane = new HashMap<>();
+        String filePath = "persoana1.txt";
+        Map<Persoana1, Integer> persoane = new HashMap<>();
 
         try {
             File file = new File(filePath);
@@ -16,7 +16,7 @@ public class nrPers {
                 String[] parts = line.split(" ");
 
                 if (parts.length == 2) {
-                    Person person = new Person(parts[0], parts[1]);
+                    Persoana1 person = new Persoana1(parts[0], parts[1]);
                     if (persoane.containsKey(person)) {
                         persoane.put(person, persoane.get(person) + 1);
                     } else {
@@ -27,7 +27,7 @@ public class nrPers {
 
             scanner.close();
 
-            for (Person person : persoane.keySet()) {
+            for (Persoana1 person : persoane.keySet()) {
                 if (persoane.get(person) >= 3) {
                     System.out.println(person);
                 }
