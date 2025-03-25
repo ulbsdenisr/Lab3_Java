@@ -1,0 +1,6 @@
+Alex Mihai , varsta:27
+Costin Andrei , varsta:28
+Darius Alexandru , varsta:35
+Emanuel Mihai , varsta:47
+Eugen Mihai , varsta:123
+Gigi Georgescu , varsta:50
